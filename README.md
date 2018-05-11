@@ -1,16 +1,22 @@
-# Pure Wind Coffee Shop
+# Kickstarter for Building Static Websites (Brunch.io)
 
-A fully responsive website for the Pure Wind Coffee Shop (a fictitious client).
+This is a starter project for building simple static websites with easy deployment to GitHub Pages.
 
-Built mobile first and using technologies such as Brunch.io, Babel, Javascript/ES6, ESLint, Bulma (a CSS framework), 
-Stylus, and Nunjucks.
+## What's Included:
 
-Visit http://alexsalomon.me/purewind-coffeeshop/ to see it live.
+* Brunch.io — build, lint, compile and bundle assets (an alternative to Webpack).
+* Babel — transpiler from Javascript ES6 to older versions.
+* ESLint — Javascript linter.
+* Bulma — A pure CSS Framework (an alternative to Bootstrap, Foundation).
+* Stylus — A CSS compiler (an alternative to SASS, LESS).
+* Stylint — A Stylus linter.
+* Nunjucks —  Javascript templating engine (an alternative to Handlebars, Mustache).
+
 
 ## Installation
 
 * Clone the repository:
-    * `git clone https://github.com/alexsalomon/purewind-coffeeshop.git`
+    * `git clone https://github.com/alexsalomon/kickstarter-static-brunch.git`
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
@@ -23,12 +29,16 @@ Visit http://alexsalomon.me/purewind-coffeeshop/ to see it live.
     * `brunch build` — builds the project for development (non-minified files and `.map` files).
     * `npm start` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
 
-## Deployment
+## Deployment to GitHub Pages
 
 ##### One time setup:
+
+```
+    cd /path/to/project/kickstarter-static-brunch
     rm -rf public
     git fetch origin gh-pages:gh-pages
     git worktree add public gh-pages
+```
 
 ##### Every deployment:
 * `npm run deploy` — cleans, builds to production, and deploys to github pages
