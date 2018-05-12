@@ -15,12 +15,14 @@ This is a starter project for building simple static websites with easy deployme
 
 ## Installation
 
-* Fork the repository by clicking on the 'Fork' button in the top right corner of the page.
+* Clone the repository:
+    `git clone https://github.com/alexsalomon/kickstarter-static-brunch.git myproject`
+* Change directory:
+    `cd myproject`
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
-* Setup:
-    * `npm install` — installs brunch plugins and app dependencies:
+* `npm install` — installs brunch plugins and app dependencies
 
 ## Development
 
@@ -30,12 +32,12 @@ This is a starter project for building simple static websites with easy deployme
 
 ## Deployment to GitHub Pages
 
-##### One time setup:
+##### One time setup and deploy:
 
-* `npm run setupdeploy` — Sets up deployment to a gh-pages branch
+* `npm run setupdeploy` — Sets up and **deploys** to a gh-pages branch.
 
-##### Every deployment:
-* `npm run deploy` — cleans, builds to production, and deploys to github pages
+##### Every consecutive deployment:
+* `npm run deploy` — cleans, builds to production, and deploys to github pages.
 
 ## Understand the Source Code
 
