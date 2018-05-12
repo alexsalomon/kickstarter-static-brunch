@@ -33,12 +33,6 @@ This is a starter project for building simple static websites with easy deployme
 ##### One time setup:
 
 * `npm run setupdeploy` — Sets up deployment to a gh-pages branch
-* Enable your site on Github:
-    1. On GitHub, navigate to your GitHub Pages site's repository.
-    2. Under your repository name, click `Settings`.
-    3. Use the Select source drop-down menu to select `gh-pages` as your GitHub Pages publishing source.
-    4. Click Save.
-
 
 ##### Every deployment:
 * `npm run deploy` — cleans, builds to production, and deploys to github pages
