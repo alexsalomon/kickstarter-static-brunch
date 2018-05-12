@@ -15,8 +15,7 @@ This is a starter project for building simple static websites with easy deployme
 
 ## Installation
 
-* Clone the repository:
-    * `git clone https://github.com/alexsalomon/kickstarter-static-brunch.git`
+* Fork the repository by clicking on the 'Fork' button in the top right corner of the page.
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
@@ -33,12 +32,13 @@ This is a starter project for building simple static websites with easy deployme
 
 ##### One time setup:
 
-```
-    cd /path/to/project/kickstarter-static-brunch
-    rm -rf public
-    git fetch origin gh-pages:gh-pages
-    git worktree add public gh-pages
-```
+* `npm run setupdeploy` — Sets up deployment to a gh-pages branch
+* Enable your site on Github:
+    1. On GitHub, navigate to your GitHub Pages site's repository.
+    2. Under your repository name, click `Settings`.
+    3. Use the Select source drop-down menu to select `gh-pages` as your GitHub Pages publishing source.
+    4. Click Save.
+
 
 ##### Every deployment:
 * `npm run deploy` — cleans, builds to production, and deploys to github pages
